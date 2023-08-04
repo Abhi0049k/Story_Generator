@@ -3,7 +3,7 @@ const name = localStorage.getItem('user') || '';
 const userName = document.querySelector('#user');
 const container = document.querySelector('main');
 const logoutBtn = document.querySelector('#logout')
-const baseServerUrl = 'http://localhost:8998/story/allFavor';
+const baseServerUrl = 'https://storygenerator.onrender.com/story/allFavor';
 
 if(name=='' || token=='') window.location.href='index.html';
 
@@ -27,7 +27,7 @@ userName.innerText = name;
 
 logoutBtn.addEventListener('click', async()=>{
     try{
-        let res = await fetch('http://localhost:8998/user/logout', {
+        let res = await fetch('https://storygenerator.onrender.com/user/logout', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',

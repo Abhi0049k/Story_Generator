@@ -1,4 +1,4 @@
-const baseServerURL = 'http://localhost:8998/user/login';
+const baseServerURL = 'https://storygenerator.onrender.com/user/login';
 
 const formEl = document.querySelector('form');
 const emailEl = document.querySelector('#email');

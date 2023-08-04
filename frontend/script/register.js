@@ -1,4 +1,4 @@
-const baseServerURL = 'http://localhost:8998/user/register';
+const baseServerURL = 'https://storygenerator.onrender.com/user/register';
 
 const formEl = document.querySelector('form');
 const nameEl = document.querySelector('#name');

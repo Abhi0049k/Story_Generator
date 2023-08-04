@@ -1,7 +1,7 @@
 const name = localStorage.getItem('user') || '';
 const token = localStorage.getItem('token') || '';
 const story = document.querySelector('#story');
-const baseServerUrl = 'http://localhost:8998/story';
+const baseServerUrl = 'https://storygenerator.onrender.com/story';
 const selectEl = document.querySelector('select');
 const formEl = document.querySelector('form');
 const user = document.querySelector('#user');
@@ -16,7 +16,7 @@ user.innerText = name;
 
 logoutBtn.addEventListener('click', async()=>{
     try{
-        let res = await fetch('http://localhost:8998/user/logout', {
+        let res = await fetch('https://storygenerator.onrender.com/user/logout', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -64,7 +64,7 @@ formEl.addEventListener('submit', (evnt)=>{
     evnt.preventDefault();
     let genre = selectEl.value;
     if(genre==='') return alert('Please select a genre')
-    alert('Please wait for 10 seconds');
+    alert('Please wait for 10-20 seconds');
     sendGenre(genre);
 })
 
