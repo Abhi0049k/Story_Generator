@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e2f54f564d.js" crossorigin="anonymous"></script>
+    <title>Story Generator</title>
+    <link rel="stylesheet" href="style/home.css">
+</head>
+<body>
+    <nav>
+        <h1>
+            Story Generator
+        </h1>
+        <div>
+            <h2 id="user"></h2>
+            <button id="logout">Logout</button>
+        </div>
+    </nav>
+    <main>
+        <div class="formContainer">
+            <form class="custom-select">
+                <select id="genre">
+                    <option value="" selected>Select a genre</option>
+                    <option value="romcom">Romcom</option>
+                    <option value="science fiction">Sciene Fiction</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="drama">Drama</option>
+                    <option value="action">Action</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="horror">Horror</option>
+                    <option value="comedy">Comedy</option>
+                </select>
+                <input type="submit" value="Generate a Story">
+            </form>
+        </div>
+        <div class="container">
+            <div class="left">
+                    <a href="favor.html" >Favorite</a>
+            </div>
+            <div class="right">
+                <p>
+                    <i class="fa-regular fa-heart" id="favor" style="color: #000000;"></i>
+                </p>
+                <p id="story"></p>
+            </div>
+        </div>
+    </main>
+    <script src="script/home.js"></script>
+</body>
+</html>
