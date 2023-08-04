@@ -19,7 +19,6 @@ const story = async (req, res)=>{
             })
         });
         response = await response.json();
-        console.log(response.choices[0]);
         const data = response.choices[0].message.content;
         res.status(200).send({story: data});
     } catch (error) {
